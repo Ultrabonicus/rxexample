@@ -1,0 +1,68 @@
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.0.7/rx.all.js"></script>
+<style>
+	body {
+		background-color: #E9EEF5;
+		margin: 5px;
+		padding: 5px;
+	}
+	
+	.target > p {
+		margin: 0;
+		padding-left: 12px;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: stretch;
+		align-content: space-between;
+	}
+	
+	.item {
+		margin-bottom: 20px;
+		background-color: #C9EAF5;
+		box-shadow: 0px 0px 77px -28px rgba(104,179,222,1);
+		padding: 8px;
+		width: 300;
+		min-height: 300px;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+	
+	.target {
+		margin-top: 6px;
+		background-color: #E9F4F7;
+		width: 100%;
+		min-height: inherit;
+	}
+	
+	#checkbox {
+		position: relative;
+		float: right;
+	}
+</style>
+<body>
+<div class='container'>
+	<div class='item'>
+		<button id='btn'>click</button>
+		<div class='target' id='target'></div>
+	</div>
+	<div class='item'>
+		<button id='btn2'>with error</button>
+		<div class='target' id='target2'></div>
+	</div>
+	<div class='item'>
+		<button id='btn3'>both</button>
+		<div class='target' id='target3'></div>
+	</div>
+	<div class='item'>
+		<button id='btn4'>toggeable</button>
+		<input id='checkbox' type=checkbox></input>
+		<div class='target' id='target4'></div>
+	</div>
+</div>
+</body>
+<script src='index.js'></script>
+</html>

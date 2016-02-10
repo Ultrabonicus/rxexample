@@ -1,0 +1,19 @@
+{
+  "name": "third",
+  "version": "1.0.0",
+  "description": "",
+  "main": "static.js",
+  "scripts": {
+    "start": "babel src/index.js -o files/index.js -s | node preStart.js | node static.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-static": "^0.7.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0"
+  }
+}
