@@ -1,4 +1,3 @@
 node_modules
 files/*.txt
 files/*.js*
-src/*.js
